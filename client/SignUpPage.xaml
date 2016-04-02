@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Save_Me.SignUpPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Save_Me"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel Orientation="Vertical" >
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Background="CadetBlue" Height="400" Width="auto" Margin="0,0,-565,0" >
+                <StackPanel Orientation="Horizontal" Padding="20" VerticalAlignment="Center">
+                    <StackPanel Orientation="Vertical" Padding="0" Grid.ColumnSpan="350" VerticalAlignment="Center">
+                        <TextBlock Text="First Name:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin= "0,20,0,0" FontFamily="Segoe UI" FontSize="32" FontWeight="ExtraLight" Foreground="White"  />
+                        <TextBlock Text="Last Name:"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin= "0,20,0,0" FontFamily="Segoe UI" FontSize="32" FontWeight="ExtraLight" Foreground="White" />
+                        <TextBlock Text="EMail:"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin= "0,20,0,0" FontFamily="Segoe UI" FontSize="32" FontWeight="ExtraLight" Foreground="White" />
+                        <!--<TextBlock Text="Do you want to volunteer in the case of emergency?" HorizontalAlignment="Left" VerticalAlignment="Center" Margin= "0,20,0,0" FontFamily="Segoe UI" FontSize="32" FontWeight="ExtraLight" Foreground="White" />
+                        <RadioButton Content="Yes" HorizontalAlignment="Left" VerticalAlignment="Center" Margin= "0,10,0,0" FontFamily="Segoe UI" FontSize="32" FontWeight="ExtraLight" Foreground="White"/>
+                        <RadioButton Content="No" HorizontalAlignment="Left" VerticalAlignment="Center" Margin= "0,10,0,0" FontFamily="Segoe UI" FontSize="32" FontWeight="ExtraLight" Foreground="White"/>-->
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Padding="10"  Height="191" VerticalAlignment="Center">
+                        <TextBox HorizontalAlignment="Center" Margin= "0,20,0,0" VerticalAlignment="Center" Width="150" Background="#FFECEFF1" />
+                        <TextBox HorizontalAlignment="Center" Margin= "0,35,0,0" VerticalAlignment="Center" Width="150" Background="#FFECEFF1" />
+                        <TextBox HorizontalAlignment="Center" Margin= "0,28,0,0" VerticalAlignment="Center" Width="150" Background="#FFECEFF1" />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <Button x:Name="NextButton" Tapped="NextButton_Tapped"  Foreground="White" FontFamily="Segoe MDL2 Assets" Content="&#xE72A;" FontSize="28" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="CadetBlue" Margin="0,0,5,35" Click="NextButton_Click" Canvas.ZIndex="10"/>
+    </StackPanel>
+</Page>

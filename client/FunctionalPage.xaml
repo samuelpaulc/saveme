@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Save_Me.FunctionalPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Save_Me"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Loaded="OnListenAsync"
+    >
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Name="MyStackpanel" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed">
+            <TextBlock Text="Acknowledged" HorizontalAlignment="Center" FontFamily="Segoe UI" FontSize="72" FontWeight="ExtraLight" Foreground="Black"/>
+            <TextBlock Text="You Will Be Saved" HorizontalAlignment="Center" FontFamily="Segoe UI" FontSize="48" FontWeight="ExtraLight" Foreground="Black" />
+        </StackPanel>
+        
+    </Grid>
+</Page>
